@@ -30,3 +30,5 @@ c:\users\magic\documents\visual studio 2013\Projects\mvcDemo\mvcDemo\bin\System.
 c:\users\magic\documents\visual studio 2013\Projects\mvcDemo\mvcDemo\obj\Debug\mvcDemo.csprojResolveAssemblyReference.cache
 c:\users\magic\documents\visual studio 2013\Projects\mvcDemo\mvcDemo\obj\Debug\mvcDemo.dll
 c:\users\magic\documents\visual studio 2013\Projects\mvcDemo\mvcDemo\obj\Debug\mvcDemo.pdb
+C:\Users\Magic\Documents\Visual Studio 2013\Projects\mvcDemo\mvcDemo\bin\EntityFramework.SqlServer.dll
+C:\Users\Magic\Documents\Visual Studio 2013\Projects\mvcDemo\mvcDemo\bin\EntityFramework.SqlServer.xml
