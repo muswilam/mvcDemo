@@ -1,0 +1,20 @@
+﻿
+@using mvcDemo.Models
+@model IEnumerable<Department>
+
+@{
+    ViewBag.Title = "Departments List";
+}
+
+<div>
+    <h2>Departments List</h2>
+    <ul>
+        @foreach (Department depart in Model)
+        {
+            <li>  @* hyperlink access to index in empController by parameter (departmentid) *@
+                @Html.ActionLink(depart.name, "Index", "Employees", new { departmentId = depart.departmentId },null)
+            </li>
+        }
+       
+    </ul>
+</div>

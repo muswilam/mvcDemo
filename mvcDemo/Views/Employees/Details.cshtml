@@ -25,6 +25,6 @@
             <td>@Model.City</td>
         </tr>
     </table>
-
-    @Html.ActionLink("Back to the List", "Index")
+    @* back to employees list by parameter of depId of these employees*@
+    @Html.ActionLink("Back to the List", "Index", new { departmentId = Model.departmentId })
 </div>

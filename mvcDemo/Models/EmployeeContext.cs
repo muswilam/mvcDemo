@@ -10,5 +10,6 @@ namespace mvcDemo.Models
     {
         // class require data from database and represent them 
         public DbSet<Employee> employee { get; set; }
+        public DbSet<Department> department { get; set; }
     }
 }

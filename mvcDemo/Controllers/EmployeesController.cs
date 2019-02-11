@@ -9,13 +9,11 @@ namespace mvcDemo.Controllers
 {
     public class EmployeesController : Controller
     {
-        //
-        // GET: /Employees/
-        public  ActionResult Index()
+        public  ActionResult Index(int departmentId)
         {
-            // view list of employees from empClass
+            // view list of employees that have the same depId & get depId from view that access model and check it in class
             EmployeeContext employeeContext = new EmployeeContext();
-            List<Employee> employees = employeeContext.employee.ToList();
+            List<Employee> employees = employeeContext.employee.Where(emp => emp.departmentId == departmentId).ToList();
             return View(employees);
         }
 
@@ -26,7 +24,6 @@ namespace mvcDemo.Controllers
             Employee employee = employeeContext.employee.Single(emp => emp.id == id);
             return View(employee);
         }
-
     }
 
 
