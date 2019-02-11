@@ -1,0 +1,21 @@
+﻿@model IEnumerable<mvcDemo.Models.Employee> 
+         @*use it to view list of data *@
+@using mvcDemo.Models;
+
+@{
+    ViewBag.Title = "Index";
+}
+<div style="font-family:Arial">
+    <h2>Employees List</h2>
+    @*make foreach loop to make a variable from employee type to iteration values in model (Employee class)*@
+    <ul>
+        @foreach (Employee emps in Model)
+        {
+            <li>
+                @Html.ActionLink(emps.name, "Details", new {id = emps.id }) @*retrieve id from empClass and matches with controller*@
+            </li>
+        }
+       
+    </ul>
+</div>
+
